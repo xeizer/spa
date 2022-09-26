@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('netizens', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('komentar');
             $table->timestamps();
         });
     }
